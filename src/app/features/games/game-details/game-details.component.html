@@ -1,0 +1,37 @@
+<div *ngIf="isGameLoaded" class="list-card">
+<mat-card class="background">
+    <mat-card-header>
+      <mat-card-title>{{game.name}}</mat-card-title>
+      <mat-card-subtitle>{{game.producer}}</mat-card-subtitle>
+    </mat-card-header>
+    <div mat-card-image></div>
+    <mat-card-content>
+      <p><b>Opis:</b> 
+        {{game.description}}
+      </p>
+      <p><b>Ilość graczy:</b> 
+        {{game.players}}
+      </p>
+      <p><b>Dla lat:</b> 
+        {{game.for_age}}
+      </p>
+      <p><b>Poziom trudności:</b> 
+        {{game.difficulty}}
+      </p>
+      <p><b>Średni czas rozgrywki:</b> 
+        {{game.avrg_time}}
+      </p>
+      <p><b>Cena:</b> 
+        {{game.price}}
+      </p>
+      <p><b>Data powstania:</b> 
+        {{game.creation_date}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="backToGames()">Powrót</button>
+      <button mat-button style="color: yellowgreen;" (click)="editGame()" *ngIf="isAdmin">Edytuj</button>
+      <button mat-button color="warn" (click)="deleteGame()" *ngIf="isAdmin">Usuń</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

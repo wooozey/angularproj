@@ -1,0 +1,12 @@
+<mat-paginator class="paginator" [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
+    (page)="onPageFired($event)">
+</mat-paginator>
+<app-search-game></app-search-game>
+<div *ngIf="games?.length >0" class="list-card">
+    <div *ngFor="let game of (games | slice: lowValue : highValue)">
+        <mat-card (click)="onGameClicked(game)" class="game-card">
+            <mat-card-title class="game-card-title">{{game.name}} </mat-card-title>
+            <mat-card-content class="game-card-body">{{game.description}} </mat-card-content>
+        </mat-card>
+    </div>
+</div>

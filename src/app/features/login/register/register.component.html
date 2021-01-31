@@ -1,0 +1,16 @@
+<mat-card class="register-card">
+    <form [formGroup]="registerForm">
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" type="email" />
+        </mat-form-field>
+        <p>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" type="password" />
+        </mat-form-field>
+        </p>
+        <button mat-stroked-button (click)="createUser()">register</button>
+        <a routerLink="/login">login user</a>
+    </form>
+</mat-card>

@@ -1,0 +1,31 @@
+.game-card{
+    margin-bottom: 25px;
+    transition: box-shadow 0.2s ease-out;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 4px rgba(black,0.068);
+    }
+    .game-card-title{
+        font-size: 22px;
+        color: #24252A;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .game-card-body{
+        position:relative;
+        max-height: 80px;
+        overflow: hidden;
+    }
+}
+.list-card{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        max-width: 600px;
+        margin-top: 50px;
+        
+}
+.paginator{
+    display: flex;
+    justify-content: center;
+}

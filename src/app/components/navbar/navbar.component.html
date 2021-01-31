@@ -1,0 +1,9 @@
+<header>
+<a class="nav__links" (click)="onLogoClicked()">Planszówki</a>
+<nav>
+    <ul class="nav__links" *ngIf="visibleButtons">
+        <li><a (click)="onAddGame()" *ngIf="isAdmin">Dodaj grę</a></li>
+        <li><a (click)="onLogout()">Wyloguj</a></li>
+    </ul>
+</nav>
+</header>
