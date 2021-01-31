@@ -58,9 +58,11 @@ CREATE TABLE planszowki(
 
 **2.** Skopiować z ustawień **Firebase** informacje o projekcie i wkleić do pliku **src\environments\src\environments.prod.ts** i **src\environments\environment.ts**
 
-**3.** W konsoli wpisać ``` ng build```
+**3.** Adres API bazowo ustawiony jest na ```https://localhost:3000```. Jeżeli jest inny należy podmienić ROOT_URL w pliku **src\app\services\game.service.ts** na prawidłowy.
 
-**4.** Następnie po zbudowaniu projektu można uruchomić serwer przy pomocy komendy ``` node server.js ```
+**4.** W konsoli wpisać ``` ng build```
+
+**5.** Następnie po zbudowaniu projektu można uruchomić serwer przy pomocy komendy ``` node server.js ```
 
 ## Przydzielanie administratora
 Po wejściu na stworzony projekt na stronie **Firebase** należy wyszukać jakiemu użytkownikowi chcemy przydzielić administratora i następnie zmienić wartość pola **isAdmin** na **true**.
