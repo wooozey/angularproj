@@ -1,0 +1,2 @@
+# angularproj
+Planszówki
