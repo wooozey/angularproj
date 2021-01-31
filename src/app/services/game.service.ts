@@ -14,7 +14,7 @@ export class GameService {
   private gamesv2: Observable<GameApi[]>;
   private gamesValue: GameApi[];
   selectedGame: GameApi;
-  readonly ROOT_URL = 'https://planszowki.herokuapp.com';
+  readonly ROOT_URL = 'https://localhost:3000';
   private searchSource = new BehaviorSubject<string>("");
   currentSearchValue = this.searchSource.asObservable();
 
