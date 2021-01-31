@@ -1,12 +1,3 @@
-
-// const { Pool, Client } = require('pg').native;
-// const DATABASE_URL = 'postgres://yuuxrktialqodh:5bc54d1c1ab7b0c192255795641ed40074e7c46509a51dc74db25f510c1f8572@ec2-54-75-231-215.eu-west-1.compute.amazonaws.com:5432/d8d1tsu315k95f';
-
-// const pool = new Pool({
-//   connectionString: DATABASE_URL
-// });
-
-
 const express = require("express");
 const app = express();
 app.use(express.json());
