@@ -14,11 +14,11 @@ app.use(express.json());
 const { Pool } = require('pg');
 const PORT = process.env.PORT || 3000;
 const pool = new Pool({
-  user: "yuuxrktialqodh",
-  password: "5bc54d1c1ab7b0c192255795641ed40074e7c46509a51dc74db25f510c1f8572",
-  host: "ec2-54-75-231-215.eu-west-1.compute.amazonaws.com",
+  user: "",
+  password: "",
+  host: "",
   port: 5432,
-  database: "d8d1tsu315k95f"
+  database: ""
 });
 
 app.listen(PORT, () => {
@@ -28,7 +28,7 @@ app.listen(PORT, () => {
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'http://planszowkiweb.herokuapp.com');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
 
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
