@@ -1,5 +1,5 @@
 # Planszówki
-Jest to projekt zarządzania grami planszowymi napisany przy pomocy TypeScript + Angular + Node.js + Postgres { Firebase. Działająca wersja do zobaczenia na stronie: 
+Jest to projekt zarządzania grami planszowymi napisany przy pomocy TypeScript + Angular + Node.js + Postgres + Firebase. Działająca wersja do zobaczenia na stronie: 
 [link](http://planszowkiweb.herokuapp.com/login)
 
 Projekt tutaj przedstawiony jest również przygotowany do wrzucenia bezpośrednio na serwis Heroku.
@@ -7,8 +7,6 @@ Projekt tutaj przedstawiony jest również przygotowany do wrzucenia bezpośredn
 ## Opis
 
 Powysza aplikacja umożliwia autoryzację użytkowników,przeglądanie gier planszowych oraz jeżeli posiada się konto administratora dodawanie, edycję i usuwanie gier planszowych.
-
-
 
 ## Instalacja web
 
