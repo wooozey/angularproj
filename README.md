@@ -14,7 +14,7 @@ Powysza aplikacja umożliwia autoryzację użytkowników,przeglądanie gier plan
 
 **1.** Na początku należy stworzyć projekt na [Firebase](https://console.firebase.google.com/) i dodać opcję autoryzacji przez maila.
 
-**2.** Następnie skopiować z ustawień Firebase informacje o projekcie i wkleić do pliku **src\environments\src\environments.prod.ts** i **src\environments\environment.ts**
+**2.** Następnie skopiować z ustawień **Firebase** informacje o projekcie i wkleić do pliku **src\environments\src\environments.prod.ts** i **src\environments\environment.ts**
 
 **3.** W konsoli wpisać ``` ng build```
 
@@ -22,7 +22,7 @@ Powysza aplikacja umożliwia autoryzację użytkowników,przeglądanie gier plan
 
 ## Instalacja api
  
- **1.** Należy stworzyć bazę postgres i podmienić dane logowania do bazy w pliku server.js:
+ **1.** Należy stworzyć bazę postgres i podmienić dane logowania do bazy w pliku **server.js**:
  ```
  const pool = new Pool({
   user: "",
@@ -35,7 +35,7 @@ Powysza aplikacja umożliwia autoryzację użytkowników,przeglądanie gier plan
 **2.** Następnie należy uruchomić poprzez komendę ``` node index.js ```
 
 ## Przydzielanie administratora
-Po wejściu na stworzony projekt na stronie Firebase należy wyszukać jakiemu użytkownikowi chcemy przydzielić administratora i następnie zmienić wartość pola isAdmin na true.
+Po wejściu na stworzony projekt na stronie **Firebase** należy wyszukać jakiemu użytkownikowi chcemy przydzielić administratora i następnie zmienić wartość pola **isAdmin** na **true**.
 ![image](https://i.ibb.co/QMNgDRY/test.png)
 
 ## Podsumowanie
