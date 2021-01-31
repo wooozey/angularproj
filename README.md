@@ -8,26 +8,20 @@ Projekt tutaj przedstawiony jest również przygotowany do wrzucenia bezpośredn
 
 Powysza aplikacja umożliwia autoryzację użytkowników, przeglądanie gier planszowych oraz jeżeli posiada się konto administratora dodawanie, edycję i usuwanie gier planszowych.
 
-## Instalacja web
-
-**1.** Na początku należy stworzyć projekt na [Firebase](https://console.firebase.google.com/) i dodać opcję autoryzacji przez maila.
-
-**2.** Skopiować z ustawień **Firebase** informacje o projekcie i wkleić do pliku **src\environments\src\environments.prod.ts** i **src\environments\environment.ts**
-
-**3.** W konsoli wpisać ``` ng build```
-
-**4.** Następnie po zbudowaniu projektu można uruchomić serwer przy pomocy komendy ``` node server.js ```
-
-## Instalacja api
+## Instalacja API
  
  **1.** Na początku należy zainstalować [PostgreSQL](https://www.postgresql.org/)
- **2.** Logowanie na postgres w celu stworzenie bazy.
+ 
+ **2.** Logowanie na postgres w celu stworzenie bazy
  ``` 
  psql -u nazwa_użytkownika
  ```
  
  **3.** Tworzenie bazy danych.
- ```CREATE DATABASE planszowki_database;```
+ 
+ ```
+ CREATE DATABASE planszowki_database;
+ ```
  
  **4.** Tworzenie tabeli do gier
  ```
@@ -56,6 +50,17 @@ CREATE TABLE planszowki(
 });
 ```
 **6.** Następnie pozostaje uruchomić serwer poprzez komendę ``` node index.js ```
+
+
+## Instalacja web
+
+**1.** Na początku należy stworzyć projekt na [Firebase](https://console.firebase.google.com/) i dodać opcję autoryzacji przez maila.
+
+**2.** Skopiować z ustawień **Firebase** informacje o projekcie i wkleić do pliku **src\environments\src\environments.prod.ts** i **src\environments\environment.ts**
+
+**3.** W konsoli wpisać ``` ng build```
+
+**4.** Następnie po zbudowaniu projektu można uruchomić serwer przy pomocy komendy ``` node server.js ```
 
 ## Przydzielanie administratora
 Po wejściu na stworzony projekt na stronie **Firebase** należy wyszukać jakiemu użytkownikowi chcemy przydzielić administratora i następnie zmienić wartość pola **isAdmin** na **true**.
